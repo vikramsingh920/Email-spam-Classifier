@@ -14,6 +14,8 @@ An intelligent, full-stack Machine Learning web application that classifies emai
 
 Built with **Python**, **Scikit-Learn (TF-IDF + Logistic Regression)**, **FastAPI**, and a **Modern Dark-Mode Web Dashboard**.
 
+🌐 **Live Demo Website:** [https://email-spam-classifier-hs2d.onrender.com](https://email-spam-classifier-hs2d.onrender.com/)
+
 ---
 
 ## 🚀 Key Features
