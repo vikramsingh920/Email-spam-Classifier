@@ -1,0 +1,232 @@
+/* CSS Variables for Light Mode (Default) */
+:root {
+  --bg-color: #f4f6f9;
+  --card-bg: #ffffff;
+  --text-main: #2c3e50;
+  --text-sub: #666666;
+  --border-color: #cccccc;
+  --input-bg: #ffffff;
+  --input-text: #333333;
+  --shadow: rgba(0, 0, 0, 0.08);
+  --sample-bg: #e9ecef;
+  --sample-text: #495057;
+  --result-card-bg: #ffffff;
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+  --bg-color: #000000;
+  --card-bg: #121212;
+  --text-main: #f8fafc;
+  --text-sub: #94a3b8;
+  --border-color: #27272a;
+  --input-bg: #000000;
+  --input-text: #f8fafc;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  --sample-bg: #1e1e24;
+  --sample-text: #cbd5e1;
+  --result-card-bg: #121212;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+footer {
+  margin-top: auto;
+  padding-top: 25px;
+  font-size: 13px;
+  color: var(--text-sub);
+  text-align: center;
+}
+
+/* Theme Toggle Button */
+.theme-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--text-main);
+  cursor: pointer;
+  box-shadow: 0 2px 6px var(--shadow);
+}
+
+.theme-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin: auto 0;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 8px;
+  color: var(--text-main);
+}
+
+.subtitle {
+  font-size: 14px;
+  color: var(--text-sub);
+  margin-bottom: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px var(--shadow);
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--text-main);
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  resize: vertical;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+textarea:focus {
+  border-color: #007bff;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.btn-clear {
+  background-color: #6c757d;
+}
+
+.btn-clear:hover {
+  background-color: #5a6268;
+}
+
+.samples {
+  font-size: 13px;
+  color: var(--text-sub);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.samples button {
+  background-color: var(--sample-bg);
+  color: var(--sample-text);
+  padding: 5px 12px;
+  font-size: 12px;
+}
+
+.samples button:hover {
+  opacity: 0.8;
+}
+
+.result-card {
+  margin-top: 20px;
+  padding: 18px;
+  background: var(--result-card-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 16px var(--shadow);
+}
+
+.result-card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: var(--text-sub);
+}
+
+.result-text {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+.ham {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+body.dark-mode .ham {
+  background-color: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+}
+
+.spam {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+body.dark-mode .spam {
+  background-color: rgba(244, 63, 94, 0.2);
+  color: #fb7185;
+}
+
+.confidence-text {
+  font-size: 14px;
+  color: var(--text-sub);
+}
+
+.hidden {
+  display: none;
+}

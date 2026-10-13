@@ -1,0 +1,49 @@
+{
+    "accuracy": 0.9865,
+    "precision": 0.9767,
+    "recall": 0.9767,
+    "f1_score": 0.9767,
+    "confusion_matrix": {
+        "true_ham": 728,
+        "false_spam": 7,
+        "false_ham": 7,
+        "true_spam": 293
+    },
+    "total_emails": 5171,
+    "train_count": 4136,
+    "test_count": 1035,
+    "top_spam_words": [
+        "http",
+        "subject",
+        "money",
+        "2004",
+        "best",
+        "paliourg",
+        "online",
+        "meds",
+        "click",
+        "info",
+        "remove",
+        "pain",
+        "email",
+        "mobile",
+        "hello"
+    ],
+    "top_ham_words": [
+        "enron",
+        "2000",
+        "thanks",
+        "deal",
+        "meter",
+        "gas",
+        "attached",
+        "hpl",
+        "daren",
+        "2001",
+        "xls",
+        "let know",
+        "questions",
+        "nom",
+        "ect"
+    ]
+}

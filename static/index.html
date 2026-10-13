@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Email Spam Classifier</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+  <!-- Theme Toggle Button in top right corner -->
+  <button id="themeToggle" class="theme-btn" title="Toggle Dark/Light Mode">🌙 Dark Mode</button>
+
+  <div class="container">
+    <h1>📧 Email Spam Classifier</h1>
+    <p class="subtitle">Enter any email text below to check whether it is Spam or Ham (Legitimate).</p>
+
+    <!-- Simple Input Form -->
+    <div class="card">
+      <label for="emailInput">Email Message:</label>
+      <textarea id="emailInput" rows="7" placeholder="Type or paste your email text here..."></textarea>
+
+      <div class="btn-group">
+        <button id="predictBtn">Check Email</button>
+        <button id="clearBtn" class="btn-clear">Clear</button>
+      </div>
+
+      <!-- Quick sample test buttons -->
+      <div class="samples">
+        <span>Try Sample:</span>
+        <button type="button" onclick="loadSample(1)">Normal Email</button>
+        <button type="button" onclick="loadSample(2)">Spam Email</button>
+      </div>
+    </div>
+
+    <!-- Result Display -->
+    <div id="resultBox" class="result-card hidden">
+      <h3>Prediction:</h3>
+      <div id="resultText" class="result-text"></div>
+      <p id="confidenceText" class="confidence-text"></p>
+    </div>
+  </div>
+  <footer> A simple spam classifier built with ❤️ by Vikram </footer>
+  <script src="/static/app.js"></script>
+</body>
+
+</html>
